@@ -1,13 +1,22 @@
-const Email = document.getElementById("Email");
+const email = document.getElementById("email");
 const pass = document.getElementById("password");
-const loginForm = document.getElementById("login");
-const loginbtn = document.getElementById("log");
-let arr = JSON.parse(localStorage.getItem("users"));
+const loginForm = document.getElementById("log");
 
-loginbtn.addEventListener('click', function (i) {
+let arr;
+
+if(localStorage.getItem("users")){
+   arr = JSON.parse(localStorage.getItem("users"));
+}else{
+   arr =[];
+}
+
+loginForm.addEventListener("click", function (e) {
+   alert("salam");
+   e.preventDefault;
    let istifadeci = true;
+
    for (let i = 0; i < arr.length; i++) {
-      if (Email.value == arr[i].email) {
+      if (email.value == arr[i].Email) {
          istifadeci = false;
          if (pass.value == arr[i].pass) {
             alert("Hesab Dogrulandi");
