@@ -9,7 +9,7 @@ if(localStorage.getItem("currentUser")){
    userlabel.classList.remove("d-none");
 }
 logout.addEventListener("click",function () {
-   this.classlist.add("d-none");      
+   this.classList.add("d-none");      
    userlabel.classList.add("d-none");     
    localStorage.removeItem("currentUser");
    window.location.reload();

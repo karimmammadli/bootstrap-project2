@@ -7,8 +7,15 @@ const gmail = document.getElementById("gml");
 const pass = document.getElementById("password");
 const parol = document.getElementById("pswrd");
 const form = document.getElementById("Sign-up");
-const signupbtn = document.getElementById("signup")
-let arr = [];
+const signupbtn = document.getElementById("signup");
+
+let arr;
+
+if(localStorage.getItem("users")){
+     arr = JSON.parse(localStorage.getItem("users"));
+  }else{
+     arr =[];
+  }
 
 signupbtn.addEventListener('click', function (i) {
    const obj = {
