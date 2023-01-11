@@ -22,7 +22,8 @@ signupbtn.addEventListener('click', function (i) {
         fname: firstname.value,
         lname: lastname.value,
         Email: Email.value,
-        pass: pass.value
+        pass: pass.value,
+        news: []
    };
    arr.push(obj);
    let jsonArr = JSON.stringify(arr);

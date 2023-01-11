@@ -21,6 +21,7 @@ loginForm.addEventListener("click", function (e) {
          if (pass.value == arr[i].pass) {
             alert("Hesab Dogrulandi");
             localStorage.setItem("currentUser",arr[i].fname);
+            localStorage.setItem("useremail", arr[i].Email)
             window.location.assign("index.html");
          } else {
             alert("Parol Yanlishdir");

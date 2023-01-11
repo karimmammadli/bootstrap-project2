@@ -15,10 +15,13 @@
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="log.html">Login</a>
+            <a class="nav-link active" aria-current="page" href="log.html" id="log">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="qeydiyat.html">SignUp</a>
+            <a class="nav-link" href="qeydiyat.html" aria-current="page" id="sign">SignUp</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-none" aria-current="page" href="news-packs.html" id="new-pack">Your News <sup>NEW</sup></a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">About</a>
@@ -27,6 +30,10 @@
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact</a>
           </li>
         </ul>
+        <form class="d-flex">
+          <button class="btn btn-outline-danger d-none outlog" type="submit">Log Out</button>
+          <h5 class="text-light mb-0 user-data" id="user">user name <span class="badge bg-info username">User</span></h5>
+      </form>
       </div>
     </div>
   </nav>
